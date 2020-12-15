@@ -28,7 +28,6 @@ func main() {
 			maxFitness := bestOrganism.Fitness
 			pool := organism.CreatePool(population, target, maxFitness)
 			population = organism.NaturalSelection(pool, population, target)
-			fmt.Printf(" population: %d, pool: %d", len(population), len(pool))
 		}
 
 	}
